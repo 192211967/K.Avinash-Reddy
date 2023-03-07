@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main()
+{
+int fruits;
+printf(" \"APPLE\"\n\"ORANGE\"\n" "\"STRAWBERRY\"\n""\"BLUEBERRY\"\n" "\"BANANA\"\n");
+return 0;
+}
