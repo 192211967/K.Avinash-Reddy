@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	int total_users,staff_users,non_staff_users,student_users;
+	printf("enter the number of total users :\n");
+	scanf("%d",&total_users);
+	printf("enter the number of staff users :\n");
+	scanf("%d",&staff_users);
+	non_staff_users=staff_users/3;
+	printf(" \n %d is non staff users",non_staff_users);
+	student_users=total_users-staff_users-non_staff_users;
+	printf("\n %d is student users",student_users);
+	return 0;
+}
