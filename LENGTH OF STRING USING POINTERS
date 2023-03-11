@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() 
+{
+    char str[]="hello world";
+    char *p =str;
+    int length=0;
+    while (*p!='\0') 
+	{
+        length++;
+        p++;
+    }
+    printf("Length of string '%s' is %d\n",str,length);
+    return 0;
+}
