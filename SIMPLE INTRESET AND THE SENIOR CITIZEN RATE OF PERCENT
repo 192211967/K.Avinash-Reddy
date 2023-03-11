@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main() 
+{
+    int principal, time, interest,age,rate;
+    printf("Enter principal amount: ");
+    scanf("%d", &principal);
+
+    printf("Enter time in years: ");
+    scanf("%d", &time);
+    
+    printf("Enter age of customer: ");
+    scanf("%d", &age);
+
+    if (age >= 60) 
+	{
+		printf("the person is senior citizen\n");
+        rate = 12;
+    } 
+	else 
+	{
+		printf("the person is not senior citizen\n");
+        rate = 10;
+    }
+
+    interest=principal*rate*time/100;
+    printf("Interest amount: %d\n", interest);
+
+    return 0;
+}
