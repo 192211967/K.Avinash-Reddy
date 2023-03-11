@@ -1,0 +1,28 @@
+#include <stdio.h>
+struct student 
+{
+    char name[50];
+    int roll_num;
+    int marks[3];
+    float average;
+};
+int main() 
+{
+    struct student s;
+
+    printf("Enter student name: ");
+    scanf("%s", s.name);
+
+    printf("Enter roll number: ");
+    scanf("%d", &s.roll_num);
+
+    printf("Enter marks for three subjects: ");
+    scanf("%d%d%d", &s.marks[0], &s.marks[1], &s.marks[2]);
+    s.average = (s.marks[0] + s.marks[1] + s.marks[2]) / 3.0;
+    printf("\nStudent Details\n");
+    printf("Name: %s\n", s.name);
+    printf("Roll Number: %d\n", s.roll_num);
+    printf("Marks: %d, %d, %d\n", s.marks[0], s.marks[1], s.marks[2]);
+    printf("Average: %.2f\n", s.average);
+    return 0;
+}
